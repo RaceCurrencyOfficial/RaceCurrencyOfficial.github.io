@@ -1,0 +1,137 @@
+
+/*-----------------------------------------
+	08.0 Timeline Style
+-----------------------------------------*/
+
+.achivement-bg {
+	background: url(../images/bg/achivement-bg.jpg) no-repeat center center;
+	background-size: cover;
+	.section-heading {
+		h3,
+		p {
+			color: $white;
+		}
+	}
+}
+
+
+.timiline-wrapper {
+	// max-width: 1170px;
+	// width: 100%;
+	height: 370px;
+	overflow: hidden;
+	position: relative;
+	.timeline-steps {
+		width: 2282px;
+		display: block;
+		white-space: nowrap;
+		height: 335px;
+		position: relative;
+		// overflow: hidden;
+		&:before {
+			content: "";
+			position: absolute;
+			height: 8px;
+			background: rgba($white, .3);
+			border-radius: 4px;
+			left: 0;
+			right: 0;
+			width: 2282px;
+			top: 50%;
+			margin-top: -4px;
+		}
+		.timeline-step {
+			width: 187px;
+			display: inline-block;
+			white-space: normal;
+			color: $white;
+			position: relative;
+			&:nth-child(odd) {
+				.timeline-step-inner {
+					margin-top: 0;
+					&:before {
+						bottom: -76px;
+					}
+					span {
+						bottom: -27px;
+						&+span {
+							bottom: -37px;
+							&+span {
+								bottom: -47px;
+							}
+						}
+					}
+				}
+			}
+			&:nth-child(even) {
+				.timeline-step-inner {
+					margin-top: 218px;
+					&:before {
+						top: -77px;
+					}
+					span {
+						top: -27px;
+						&+span {
+							top: -37px;
+							&+span {
+								top: -47px;
+							}
+						}
+					}
+				}
+			}
+			.timeline-step-inner {
+				position: absolute;
+				&:before {
+					content: '';
+					position: absolute;
+					height: 20px;
+					width: 20px;
+					border: 3px solid $white;
+					background-image: linear-gradient(to right, #f87a46, #feb933);
+					left: 50%;
+					margin-left: -7.5px;
+					border-radius: 50%;
+				}
+				h6 {
+					color: $white;
+					text-transform: uppercase;
+					margin-bottom: 12px;
+				}
+				span {
+					position: absolute;
+					height: 5px;
+					width: 5px;
+					border-radius: 50%;
+					background: $white;
+					left: 50%;
+					// margin-left: -2.5px;
+				}
+			}
+		}
+	}
+	.ps__rail-x,
+	.ps__rail-x:hover {
+		opacity: .8;
+		border-radius: 10px;
+		display: inline-block;
+		background: rgba($white, .3);
+		height: 20px;
+		.ps__thumb-x {
+			height: 16px;
+			border-radius: 10px;
+			background-image: linear-gradient(to right, #f87a46, #feb933);
+		}
+	}
+	.ps--active-x > .ps__rail-x,
+	.ps--active-y > .ps__rail-y {
+	  display: inline-block;
+	  max-width: 400px;
+	  width: 400px;
+	  background-color: transparent;
+	}
+	.ps__thumb-x,
+	.ps__thumb-x:hover {
+		height: 16px;
+	}
+}

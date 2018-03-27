@@ -1,0 +1,23 @@
+@mixin border-radius($radius) {
+	border-radius: $radius;
+	-ms-border-radius: $radius;
+	-moz-border-radius: $radius;
+	-webkit-border-radius: $radius;
+}
+
+@mixin transition($transition) {
+	transition: $transition;
+	-ms-transition: $transition;
+	-moz-transition: $transition;
+	-webkit-transition: $transition;
+}
+
+
+@mixin gradient-color($args...) {
+ background-image: -o-gradient-color($args); 
+ background-image: -moz-gradient-color($args); 
+ background-image: -webkit-gradient-color($args); 
+  background-image: gradient-color($args); 
+}
+
+//   @include linear-gradient-b(45deg, black, white);

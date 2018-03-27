@@ -1,0 +1,28 @@
+
+
+/*-----------------------------------------
+	11.0 CountDown Style
+-----------------------------------------*/
+
+.countdown {
+	padding: 50px 0 60px;
+	.countdown-time {
+		display: block;
+		.section_count {
+			width: 25%;
+			display: inline-block;
+			text-align: center;
+			.tcount {
+		    display: block;
+		    font-size: 3.6rem;
+		    line-height: 1;
+		    font-weight: 700;
+		    color: $white;
+		    font-family: $bodyFont;
+			}
+			.text {
+				font-size: 1.6rem;
+			}
+		}
+	}
+}

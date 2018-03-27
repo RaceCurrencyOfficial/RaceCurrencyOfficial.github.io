@@ -1,0 +1,62 @@
+/*=======================================================================
+* Template Name: ICO-Trade
+* Template URI: http://codepassenger.com/html/ICO-Trade
+* Author: CodePassenger
+* Author URI: http://codepassenger.com/
+* Description: Environment and Non-profit Template
+* Version: 1.1
+* License: GPL v2 or later
+* License URI: http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+* Tags: html, template, virtual-currency, bitcoin, ico-trade, bootstrap, codepassenger
+======================================================================= */
+/* Table of content
+--------------------------------------------
+
+	01.0 General Style
+	02.0 Heading Style
+	03.0 Featured Content Style
+	04.0 How it Works Style
+	05.0 Accordion Style
+	06.0 Pricing Style
+	07.0 Team Style
+	08.0 Timeline Style
+	09.0 Advisory Style
+	10.0 Account Style
+	11.0 CountDown Style
+	12.0 Progress-bar Style
+	13.0 Chart Style
+	14.0 Blog Style
+	15.0 Slider Style
+	16.0 Video Player Style
+	17.0 Call-to-Action Style
+	18.0 Clients Style
+	19.0 Footer Style
+	19.0 Preloader Style
+
+
+	
+-------------------------------------------*/
+
+
+@import 'partial/_variables.scss';
+@import 'partial/_mixin.scss';
+@import '_general.scss';
+@import '_heading.scss';
+@import '_featured-content.scss';
+@import '_how-it-work.scss';
+@import '_accordion.scss';
+@import '_pricing.scss';
+@import '_team.scss';
+@import '_timeline.scss';
+@import '_advisory.scss';
+@import '_account.scss';
+@import '_countdown.scss';
+@import '_progressbar.scss';
+@import '_chart.scss';
+@import '_blog.scss';
+@import '_slider.scss';
+@import '_video-player.scss';
+@import '_call-to-action.scss';
+@import '_clients.scss';
+@import '_footer.scss';
+@import '_preloader.scss';

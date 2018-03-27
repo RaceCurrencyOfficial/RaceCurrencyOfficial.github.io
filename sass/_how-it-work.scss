@@ -1,0 +1,60 @@
+
+
+
+/*-----------------------------------------
+	04.0 How it Works Style
+-----------------------------------------*/
+
+.working-process {
+	padding: 0 30px 30px;
+	.working-process-thumb-1 {
+		&:before {
+			content: url(../images/how-it-work/1.png);
+		}
+	}
+	.working-process-thumb-2 {
+		&:before {
+			content: url(../images/how-it-work/2.png);
+		}
+	}
+	.working-process-thumb-3 {
+		&:before {
+			content: url(../images/how-it-work/3.png);
+		}
+	}
+	.working-process-thumb {
+		margin: 0 auto 15px;
+		display: inline-block;
+		padding-top: 75px;
+		position: relative;
+		&:before {
+			position: absolute;
+			bottom: 50px;
+			left: 0;
+			right: 0;
+		}
+	}
+	h6 {
+		font-size: 2.0rem;
+		margin-bottom: 15px;
+	}
+}
+
+@media all and (max-width: 767px) {
+	.working-process {
+		float: left;
+		width: calc(50% - 30px);
+		padding: 0;
+		margin: 0 15px 30px;
+	}
+}
+
+@media all and (max-width: 539px) {
+	.working-process {
+		float: left;
+		width: 100%;
+		padding: 0;
+		margin: 0 0 30px;
+	}
+}
+

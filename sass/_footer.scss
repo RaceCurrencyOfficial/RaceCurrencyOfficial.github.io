@@ -1,0 +1,220 @@
+
+/*-----------------------------------------
+	19.0 Footer Style
+-----------------------------------------*/
+
+.footer-bg {
+	background: url(../images/bg/footer-bg.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+.footer-widget {
+	.logo {
+		margin-bottom: 50px;
+	}
+	.contact {
+		span {
+			padding: 0 15px;
+			font-size: 1.6rem;
+			a {
+				color: $white;
+				text-decoration: underline;
+			}
+		}
+	}
+	.office-time {
+		color: rgba($white, .5);
+	}
+	.newsletter {
+		padding: 50px 0;
+		max-width: 430px;
+		margin: 0 auto;
+		h6 {
+			margin-bottom: 15px;
+			color: $white;
+			font-weight: 500;
+		}
+		form {
+			.form-group {
+				margin-bottom: 20px;
+				.form-control {
+					height: 50px;
+					border: 1px solid rgba($white, .3);
+					box-shadow: none;
+					border-radius: 30px;
+					background: transparent;
+					padding: 0 20px;
+					text-align: center;
+					color: rgba($white, .5);
+					outline: none;
+				}
+			}
+			.button {
+				border: 0;
+				background-image: linear-gradient(to right, #f87a46, #feb933);
+				color: $white;
+				height: 50px;
+				border-radius: 30px;
+				transition: all .3s ease;
+				outline: none;
+				margin-bottom: 10px;
+				&:hover {
+					background-image: linear-gradient(to left, #f87a46, #feb933);
+				}
+			}
+			.newsletter-error {
+				background: #e74c3c;
+				display: none;
+			}
+			.newsletter-success {
+				background: #16a085;
+				display: none;
+			}
+		}
+	}
+	.join {
+		h5 {
+			color: $white;
+			margin-bottom: 20px;
+		}
+		.button {
+			height: 70px;
+			width: 70px;
+			line-height: 70px;
+			font-size: 2.8rem;
+			border-radius: 35px;
+			padding: 0;
+			background: #0088cc;
+			color: $white;
+			border: 0;
+		}
+	}
+	.social-link {
+		margin-top: 30px;
+		ul {
+			padding: 0;
+			margin: 0;
+			list-style: none;
+			li {
+				display: inline;
+				margin: 0 5px 10px;
+				a {
+					height: 40px;
+					width: 40px;
+					border-radius: 50%;
+					font-size: 1.6rem;
+					line-height: 40px;
+					color: $white;
+				}
+				.facebook {
+					background: #3b5998;
+				}
+				.twitter {
+					background: #1da1f2;
+				}
+				.youtube {
+					background: #ff0000;
+				}
+				.reddit {
+					background: #ff4500;
+				}
+				.github {
+					background: #6e5494;
+				}
+				.medium {
+					background: #00ab6c;
+				}
+				.instagram {
+					background: #c13584;
+				}
+				.linkedin {
+					background: #0077b5;
+				}
+				.bitcoin {
+					background: #ffb900;
+				}
+			}
+		}
+	}
+}
+
+.footer-copyright {
+	border-top: 1px solid rgba($white, .3);
+	padding: 40px 0;
+	.copyright-text {
+		color: rgba($white, .6);
+		margin-bottom: 0;
+		a {
+			color: inherit;
+		}
+	}
+	.footer-nav {
+		ul {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+			text-align: right;
+			li {
+				display: inline;
+				a {
+					color: rgba($white, .6);
+				}
+			}
+			li+li {
+				margin-left: 40px;
+			}
+		}
+	}
+}
+
+.go-top {
+	position: absolute;
+	bottom: 30px;
+	left: 50%;
+	transform: translateX(-50%);
+	a {
+		span {
+			font-size: 2.8rem;
+			color: #f87a46;
+		}
+	}
+}
+
+
+@media all and (max-width: 991px) {
+	.footer-widget {
+		.logo {
+			margin-bottom: 25px;
+		}
+		.newsletter {
+			padding: 25px 0;
+		}
+		.social-link {
+			margin-top: 30px;
+			ul {
+				padding: 0;
+				margin: 0;
+				list-style: none;
+				li {
+					display: inline-block;
+					margin: 0 5px 10px;
+				}
+			}
+		}
+	}
+}
+
+@media all and (max-width: 767px) {
+	.footer-copyright {
+		text-align: center;
+		.footer-nav {
+			ul {
+				text-align: center;
+			}
+		}
+	}
+	.go-top {
+		display: none;
+		visibility: hidden;
+	}
+}

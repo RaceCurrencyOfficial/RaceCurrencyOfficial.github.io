@@ -1,0 +1,116 @@
+
+
+
+/*-----------------------------------------
+	12.0 Progress-bar Style
+-----------------------------------------*/
+
+
+.progress-body {
+	position: relative;
+	.progress {
+		border-radius: 0;
+		box-shadow: none;
+		height: 15px;
+		overflow: visible;
+		margin-bottom: 50px;
+		border-radius: 10px;
+		.progress-bar {
+			background-image: linear-gradient(to left, #f87a46, #feb933);
+			box-shadow: none;
+			position: relative;
+			border-top-left-radius: 10px;
+			border-bottom-left-radius: 10px;
+			.progress-to {
+				float: none;
+				position: absolute;
+				top: -20px;
+				right: 0;
+				color: $white;
+				line-height: 1.4;
+				padding: 0 5px;
+				border-radius: 3px;
+				&:before {
+					position: absolute;
+					content: "";
+					bottom: -6px; 
+					right: 0;
+					top: 2px;
+					width: 1px; 
+				  height: 10px;
+				  background: $white;
+				}
+				&:after {
+					position: absolute;
+					content: "";
+					bottom: -6px; 
+					right: 0;
+					top: 42px;
+					width: 1px; 
+				  height: 10px;
+				  background: $white;
+				}
+			}
+		}
+	}
+	.starting-place {
+		float: none;
+		position: absolute;
+		top: -20px;
+		left: 1px;
+		color: $white;
+		line-height: 1.4;
+		padding: 0 5px;
+		font-size: 1.2rem;
+		&:before {
+			position: absolute;
+			content: "";
+			bottom: -6px; 
+			left: 0;
+			top: 2px;
+			width: 1px; 
+		  height: 10px;
+		  background: $white;
+		}
+		&:after {
+			position: absolute;
+			content: "";
+			bottom: -6px; 
+			left: 0;
+			top: 42px;
+			width: 1px; 
+		  height: 10px;
+		  background: $white;
+		}
+	}
+	.target {
+		float: none;
+		position: absolute;
+		top: -20px;
+		right: 0;
+		color: $white;
+		line-height: 1.4;
+		padding: 0 5px;
+		font-size: 1.2rem;
+		&:before {
+			position: absolute;
+			content: "";
+			bottom: -6px; 
+			right: 0;
+			top: 2px;
+			width: 1px; 
+		  height: 10px;
+		  background: $white;
+		}
+		&:after {
+			position: absolute;
+			content: "";
+			bottom: -6px; 
+			right: 0;
+			top: 42px;
+			width: 1px; 
+		  height: 10px;
+		  background: $white;
+		}
+	}
+}

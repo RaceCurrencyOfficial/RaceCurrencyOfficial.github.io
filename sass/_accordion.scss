@@ -1,0 +1,81 @@
+
+
+
+/*-----------------------------------------
+	05.0 Accordion Style
+-----------------------------------------*/
+
+.icot-accordion {
+	.panel {
+		background: $grey;
+		border: 0;
+		border-radius: 0;
+		box-shadow: none;
+		border-bottom: 1px solid rgba($black, .1);
+		margin-bottom: 0;
+		.panel-heading {
+			border: 0;
+			background: transparent;
+			padding: 0;
+			border-top-left-radius: 0;
+			border-top-right-radius: 0;
+			.panel-title {
+				a {
+					padding: 30px 30px 30px 60px;
+					display: block;
+					position: relative;
+					&:before {
+						font-family: FontAwesome;
+						left: 30px;
+						position: absolute;
+					}
+				}
+				a[aria-expanded=true] {
+					border-bottom: 1px solid rgba($black, .1);
+					&:before {
+						content: "\f106";
+					}
+				}
+				a[aria-expanded=false] {
+					border-bottom: 0;
+					&:before {
+						content: "\f107";
+					}
+				}
+			}
+		}
+		.panel-collapse {
+			.panel-body {
+				border-top: 0;
+				padding: 30px 60px;
+			}
+		}
+	}
+	.panel+.panel {
+		margin-top: 0;
+	}
+}
+
+
+@media all and (max-width: 579px) {
+	.icot-accordion {
+		.panel {
+			.panel-heading {
+				.panel-title {
+					a {
+						padding: 20px 20px 20px 35px;
+						&:before {
+							left: 20px;
+						}
+					}
+				}
+			}
+			.panel-collapse {
+				.panel-body {
+					border-top: 0;
+					padding: 20px 35px;
+				}
+			}
+		}
+	}
+}

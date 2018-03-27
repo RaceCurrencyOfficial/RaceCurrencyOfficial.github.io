@@ -1,0 +1,45 @@
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $primaryColor;
+    z-index: 99999;
+    svg {
+        width: 100px;
+        height: 100px;
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        path{
+            transform-origin: center center;
+            &:first-child{
+                 -webkit-animation: rotateanim 2s infinite linear;
+                  animation: rotateanim 2s infinite linear;
+            }
+            &:nth-child(2){
+                -webkit-animation: rotateanim 1s infinite linear;
+                  animation: rotateanim 1s infinite linear;
+                animation-direction: reverse;
+            }
+            &:last-child{
+                -webkit-animation: rotateanim 2s infinite linear;
+                  animation: rotateanim 2s infinite linear;
+            }
+        }
+    }
+}
+
+@-webkit-keyframes rotateanim {
+    from {transform: rotate(0)}
+    to {transform: rotate(360deg)}
+}
+
+@keyframes rotateanim {
+  from {transform: rotate(0)}
+    to {transform: rotate(360deg)}
+}
+

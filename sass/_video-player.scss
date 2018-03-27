@@ -1,0 +1,23 @@
+/*-----------------------------------------
+	16.0 Video Player Style
+-----------------------------------------*/
+
+
+
+.feature-single-video {
+	.plyr__play-large {
+		padding: 30px;
+		border: 0;
+		background: $seconderyColor;
+	}
+
+	.plyr__progress--played, 
+	.plyr__volume--display {
+		color: $seconderyColor;
+	}
+
+	.plyr--video .plyr__controls button.tab-focus:focus, 
+	.plyr--video .plyr__controls button:hover {
+		background: $seconderyColor;
+	}
+}

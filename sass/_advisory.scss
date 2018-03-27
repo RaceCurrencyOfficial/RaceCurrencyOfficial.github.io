@@ -1,0 +1,79 @@
+
+/*-----------------------------------------
+	09.0 Advisory Style
+-----------------------------------------*/
+
+
+.advisory-board-slider {
+	.advisory-board {
+		padding: 20px;
+		background: rgba($white, .05);
+		margin: 0 15px;
+		.head {
+			.thumb {
+				float: left;
+				width: 70px;
+				height: 70px;
+				border-radius: 50%;
+				overflow: hidden;
+			}
+			.thumb+.meta {
+				width: calc(100% - 70px);
+				padding-left: 20px;
+				margin-top: 15px;
+			}
+			.meta {
+				float: left;
+				width: 100%;
+				.advisor-info {
+					width: 65%;
+					float: left;
+					h6 {
+						color: $white;
+						font-weight: 400;
+					}
+				}
+				.company-logo {
+					float: left;
+					width: 35%;
+					text-align: right;
+					img {
+						display: inline-block;
+					}
+				}
+			}
+		}
+		.body {
+			margin-top: 20px;
+			.social-icon {
+				position: relative;
+				&:before {
+					position: absolute;
+					content: "";
+					top: 13px;
+					left: 20px;
+					height: 1px;
+					width: 30px;
+					background: rgba($white, .1);
+				}
+			}
+		}
+	}
+	.owl-controls {
+		text-align: center;
+		margin-top: 30px;
+		.owl-pagination {
+			.owl-page {
+				height: 10px;
+				width: 10px;
+				border-radius: 50%;
+				background: $grey2;
+				display: inline-block;
+				margin: 0 5px;
+				&.active {
+					background-image: linear-gradient(to right, #f87a46, #feb933);
+				}
+			}
+		}
+	}
+}

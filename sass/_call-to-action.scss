@@ -1,0 +1,75 @@
+
+/*-----------------------------------------
+	17.0 Call-to-Action Style
+-----------------------------------------*/
+
+.call-to-action {
+	background-image: linear-gradient( to right, #f87a46, #feb933);
+}
+
+.call-to-action-text {
+	position: relative;
+	&:before {
+		position: absolute;
+		top: 0;
+		right: 0;
+		height: 100%;
+		width: 1px;
+		content: "";
+		background: rgba($white, .4);
+	}
+	h4 {
+		margin-bottom: 20px;
+		color: $white;
+	}
+}
+
+.call-to-action-buttons {
+	text-align: right;
+	margin-top: 30px;
+	position: relative;
+	&:before {
+		content: url(../images/call-to-action/arrow.png);
+		position: absolute;
+		top: -60px;
+		right: 37%;
+	}
+	a+a {
+		margin-left: 10px;
+	}
+}
+
+@media all and (max-width: 1199px) {
+	.call-to-action-buttons {
+		&:before {
+			top: -60px;
+			right: 44%;
+		}
+		a+a {
+			margin-left: 10px;
+		}
+	}
+}
+
+@media all and (max-width: 991px) {
+	.call-to-action-text {
+		&:before {
+			height: 0;
+			width: 0;
+		}
+	}
+	.call-to-action-buttons {
+		margin-top: 0;
+		text-align: left;
+		&:before {
+			content: "";
+		}
+		a+a {
+			margin-left: 0;
+		}
+		a {
+			margin-right: 10px;
+			margin-bottom: 10px;
+		}
+	}
+}

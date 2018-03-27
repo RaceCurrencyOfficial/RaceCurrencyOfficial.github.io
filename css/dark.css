@@ -1,0 +1,172 @@
+/*-----------------------------------------
+	Dark Template Styles
+-----------------------------------------*/
+/*** General ***/
+body {
+  color: #ffffff;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  color: #fefefe;
+}
+
+/* Background and Colors ***/
+.primary-bg {
+  background-color: #04113c;
+}
+
+.featured-bg-1 {
+  background-image: url(../images/bg/featured-bg-dark.jpg);
+}
+
+.team-bg {
+  background-image: url(../images/bg/team-bg-dark.jpg);
+}
+
+.achivement-bg {
+  background-image: url(../images/bg/achivement-bg-dark.jpg);
+}
+
+.footer-bg {
+  background-image: url(../images/bg/footer-bg-dark.jpg);
+}
+
+.bg-color-2 {
+  background-color: #061949;
+}
+.bg-color-2 .icot-accordion .panel {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.05);
+}
+.bg-color-2 .icot-accordion .panel .panel-heading .panel-title a[aria-expanded=true] {
+  border-color: rgba(255, 255, 255, 0.05);
+}
+.bg-color-2 .icot-accordion .panel .panel-body {
+  color: #7695b5;
+}
+.bg-color-2 .panel-default > .panel-heading {
+  color: #ffffff;
+}
+
+.section-heading-with-logo h6 {
+  color: #7695b5;
+}
+
+/*** Slider and Banner ***/
+.banner-wrapper {
+  background-image: url(../images/bg/slider-default-bg-dark.jpg);
+}
+
+.cpico-slider-classic .slider-bg-1 {
+  background-image: url(../images/bg/slider-bg-1-dark.jpg);
+}
+.cpico-slider-classic .slider-bg-2 {
+  background-image: url(../images/bg/slider-bg-2-dark.jpg);
+}
+.cpico-slider-classic .slider-bg-3 {
+  background-image: url(../images/bg/slider-bg-3-dark.jpg);
+}
+
+/*** Featured Content ***/
+.featured-content p {
+  color: #7695b5;
+}
+.featured-content ul li {
+  color: #7695b5;
+}
+.featured-content ul li:before {
+  color: #ffffff;
+}
+.featured-content .download .buttons .button {
+  background-color: transparent;
+  text-transform: none;
+}
+.featured-content .download .buttons .button span {
+  background-color: transparent;
+  color: #ffffff;
+  text-transform: none;
+  border: 2px solid rgba(255, 255, 255, 0.15);
+}
+.featured-content .download .buttons .button span .fa {
+  margin-left: 5px;
+}
+
+.featured-video-block .border-box-1 {
+  border-color: rgba(96, 96, 96, 0.25);
+}
+.featured-video-block .border-box-1 .border-box-2 {
+  border-color: rgba(96, 96, 96, 0.25);
+}
+.featured-video-block .border-box-1 .border-box-2 .border-box-3 {
+  border-color: rgba(96, 96, 96, 0.25);
+}
+
+.featured-box {
+  border-color: rgba(96, 96, 96, 0.25);
+}
+
+/*** Testimonials ***/
+.cpch-testimonial-item .testimonial-head .commenter-info {
+  color: #111111;
+}
+.cpch-testimonial-item .testimonial-head .commenter-info h6 {
+  color: #111111;
+}
+.cpch-testimonial-item .testimonial-body h6 {
+  color: #111111;
+}
+
+.testimonial-classic .testimonial-wrapper {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#061649), to(#05123d));
+  background-image: linear-gradient(to top, #061649 0%, #05123d 100%);
+  border: 1px solid #000000;
+}
+
+/*** Working Process ***/
+.working-process .working-process-thumb-1:before {
+  content: url(../images/how-it-work/1-dark.png);
+}
+.working-process .working-process-thumb-2:before {
+  content: url(../images/how-it-work/2-dark.png);
+}
+.working-process .working-process-thumb-3:before {
+  content: url(../images/how-it-work/3-dark.png);
+}
+
+/*** Pricing ***/
+.pricing-slider .pricing-box {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 5px;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.05);
+}
+.pricing-slider .pricing-box .pricing-body .button {
+  color: #ffffff;
+}
+
+/*** Post ***/
+.post-slider .news-post {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+/*** Client Logo ***/
+.clients-logo .client-logo {
+  opacity: 0.5;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.clients-logo .client-logo:hover {
+  opacity: 1;
+}

@@ -1,0 +1,128 @@
+
+/*-----------------------------------------
+	07.0 Team Style
+-----------------------------------------*/
+
+.member {
+	width: 25%;
+	float: left;
+	padding: 30px;
+	background: rgba($white, .05);
+	transition: all .3s ease;
+	border-right: 1px solid rgba($white, .1);
+	border-top: 1px solid rgba($white, .1);
+
+	&:hover {
+		background: rgba($white, .1);
+	}
+	.member-thumb {
+		height: 130px;
+		width: 130px;
+		border-radius: 50%;
+		overflow: hidden;
+		margin: 0 auto 20px;
+	}
+	.body {
+		color: $white;
+		h6 {
+			a {
+				color: $white;
+			}
+		}
+		.social-link {
+			position: relative;
+			display: inline-block;
+			margin: 0 auto;
+			&:before {
+				position: absolute;
+				content: "";
+				height: 1px;
+				width: 30px;
+				top: 12px;
+				left: 20px;
+				background: rgba($white, .1);
+			}
+			&:after {
+				position: absolute;
+				content: "";
+				height: 1px;
+				width: 30px;
+				top: 12px;
+				right: 20px;
+				background: rgba($white, .1);
+			}
+			a {
+				color: #00a0dc;
+			}
+		}
+	}
+}
+
+.member:nth-child(4n) {
+	border-right: 0;
+}
+
+.member:first-child,
+.member:nth-child(2),
+.member:nth-child(3),
+.member:nth-child(4) {
+	border-top: 0;
+}
+
+.team-bg {
+	background: url(../images/bg/team-bg.jpg) no-repeat center center;
+	background-size: cover;
+	overflow: hidden;
+	.section-heading {
+		h3,
+		p {
+			color: $white;
+		}
+	}
+}
+
+@media all and (max-width: 991px) {
+	.member {
+		width: 33.33%;
+	}
+	.member:nth-child(4n) {
+		border-top: 1px solid rgba($white, .1);
+		border-right: 1px solid rgba($white, .1);
+	}
+	.member:nth-child(3n) {
+		border-right: 0;
+	}
+	.member:last-child {
+		border-right: 0;
+	}
+}
+
+@media all and (max-width: 767px) {
+	.member {
+		width: 50%;
+	}
+	.member:nth-child(3n) {
+		border-top: 1px solid rgba($white, .1);
+		border-right: 1px solid rgba($white, .1);
+	}
+	.member:nth-child(2n) {
+		border-right: 0;
+	}
+}
+
+@media all and (max-width: 479px) {
+	.member {
+		width: 100%;
+	}
+	.member:nth-child(3n) {
+		border-top: 1px solid rgba($white, .1);
+		border-right: 0;
+	}
+	.member:nth-child(n) {
+		border-right: 0;
+		border-top: 1px solid rgba($white, .1);
+	}
+	.member:first-child {
+		border-top: 0;
+	}
+}

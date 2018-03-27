@@ -1,0 +1,39 @@
+
+/*-----------------------------------------
+	13.0 Chart Style
+-----------------------------------------*/
+
+.chart-block {
+	background: $primaryColor;
+	color: $white;
+	padding: 40px 40px 0;
+	border-radius: 20px;
+	margin-bottom: 30px;
+	h4 {
+		color: $white;
+		margin-bottom: 20px;
+	}
+
+	h5 {
+		margin-top: 30px;
+		color: $white;
+	}
+	.button {
+		position: relative;
+		transform: translateY(50%);
+		background-image: linear-gradient(to right, #f87a46, #feb933);
+		border: 0;
+		padding: 12px 30px;
+		border-radius: 30px;
+		color: $white;
+		&:hover {
+		  background-image: linear-gradient(to left, #f87a46, #feb933);
+		}
+	}
+}
+
+@media all and (max-width: 439px) {
+	.chart-block {
+		padding: 30px 20px 0;
+	}
+}

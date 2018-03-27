@@ -1,0 +1,43 @@
+
+
+
+/*-----------------------------------------
+	18.0 Clients Style
+-----------------------------------------*/
+
+.clients-logo {
+	.client-logo {
+		float: left;
+		width: 20%;
+		text-align: center;
+		margin-bottom: 30px;
+		img {
+			display: inline-block;
+		}
+	}
+}
+
+@media all and (max-width: 991px) {
+	.clients-logo {
+		.client-logo {
+			width: 33.33%;
+		}
+	}
+}
+
+
+@media all and (max-width: 579px) {
+	.clients-logo {
+		.client-logo {
+			width: 50%;
+		}
+	}
+}
+
+@media all and (max-width: 379px) {
+	.clients-logo {
+		.client-logo {
+			width: 100%;
+		}
+	}
+}

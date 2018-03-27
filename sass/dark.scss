@@ -1,0 +1,220 @@
+/*-----------------------------------------
+	Dark Template Styles
+-----------------------------------------*/
+
+$subheadingColor: #7695b5;
+$primaryBg: #04113c;
+$bg2: #061949;
+
+
+/*** General ***/
+body {
+    color: #ffffff;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+    color: #fefefe;
+}
+
+
+/* Background and Colors ***/
+.primary-bg {
+    background-color: $primaryBg;
+}
+
+.featured-bg-1 {
+    background-image: url(../images/bg/featured-bg-dark.jpg);
+}
+
+.team-bg{
+    background-image: url(../images/bg/team-bg-dark.jpg);
+}
+
+.achivement-bg{
+    background-image: url(../images/bg/achivement-bg-dark.jpg);
+}
+
+.footer-bg{
+    background-image: url(../images/bg/footer-bg-dark.jpg);
+}
+
+.bg-color-2 {
+    background-color: $bg2;
+    .icot-accordion {
+        .panel{
+            background-color: rgba(#fff, 0.05);
+            border-color: rgba(#fff, 0.05);
+            .panel-heading .panel-title a[aria-expanded=true]{
+                border-color: rgba(#ffffff, 0.05);
+            }
+            .panel-body{
+                color: $subheadingColor;
+            }
+        }
+    }
+    .panel-default{
+        >.panel-heading{
+            color: #ffffff;
+        }
+    }
+}
+
+.section-heading-with-logo {
+    h6 {
+        color: $subheadingColor;
+    }
+}
+
+/*** Slider and Banner ***/
+.banner-wrapper{
+    background-image: url(../images/bg/slider-default-bg-dark.jpg);
+}
+
+.cpico-slider-classic {
+    .slider-bg-1{
+        background-image: url(../images/bg/slider-bg-1-dark.jpg);
+    }
+    .slider-bg-2{
+        background-image: url(../images/bg/slider-bg-2-dark.jpg);
+    }
+    .slider-bg-3{
+        background-image: url(../images/bg/slider-bg-3-dark.jpg);
+    }
+}
+
+
+/*** Featured Content ***/
+.featured-content {
+    p {
+        color: $subheadingColor;
+    }
+    ul {
+        li {
+            color: $subheadingColor;
+            &:before {
+                color: #ffffff;
+            }
+        }
+    }
+    .download {
+        .buttons {
+            .button {
+                background-color: transparent;
+                text-transform: none;
+                span {
+                    background-color: transparent;
+                    color: #ffffff;
+                    text-transform: none;
+                    border: 2px solid rgba(#fff, 0.15);
+                    .fa {
+                        margin-left: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.featured-video-block {
+    .border-box-1 {
+        border-color: rgba(#606060, 0.25);
+        .border-box-2 {
+            border-color: rgba(#606060, 0.25);
+            .border-box-3 {
+                border-color: rgba(#606060, 0.25);
+            }
+        }
+    }
+}
+
+.featured-box {
+    border-color: rgba(#606060, 0.25);
+}
+
+
+/*** Testimonials ***/
+.cpch-testimonial-item {
+    .testimonial-head {
+        .commenter-info {
+            color: #111111;
+            h6 {
+                color: #111111;
+            }
+        }
+    }
+    .testimonial-body {
+        h6 {
+            color: #111111;
+        }
+    }
+}
+
+.testimonial-classic {
+    .testimonial-wrapper {
+        background-image: linear-gradient(to top, #061649 0%, #05123d 100%);
+        border: 1px solid #000000;
+    }
+}
+
+
+/*** Working Process ***/
+.working-process {
+    .working-process-thumb-1 {
+        &:before {
+            content: url(../images/how-it-work/1-dark.png);
+        }
+    }
+    .working-process-thumb-2 {
+        &:before {
+            content: url(../images/how-it-work/2-dark.png);
+        }
+    }
+    .working-process-thumb-3 {
+        &:before {
+            content: url(../images/how-it-work/3-dark.png);
+        }
+    }
+}
+
+
+/*** Pricing ***/
+.pricing-slider {
+    .pricing-box {
+        background-color: rgba(#fff, 0.05);
+        border-radius: 5px;
+        overflow: hidden;
+        box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.05);
+        .pricing-body {
+            .button{
+                color: #ffffff;
+            }
+        }
+    }
+}
+
+/*** Post ***/
+.post-slider {
+    .news-post{
+        background-color: rgba(#ffffff, 0.05);
+    }
+}
+
+/*** Client Logo ***/
+.clients-logo .client-logo{
+    opacity: 0.5;
+    transition: all 0.3s ease;
+    &:hover{
+        opacity: 1;
+    }
+}
